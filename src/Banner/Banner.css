@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+.banner-background{
+    background: rgba(0,0,0,0.45)url("https://www.edisonresearch.com/wp-content/uploads/2022/03/stockvault-home-office185095-1030x760.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 450px;
+}
+.banner-text{
+    padding-top: 286px;
+    padding-left: 200px;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+}

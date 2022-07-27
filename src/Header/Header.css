@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+.side-margin{
+    margin-left: 72px;
+    margin-right: 72px;
+}
+.search-s-margin{
+    margin-left: 305px;
+}
+.search-e-margin{
+    margin-right: 261px;
+}
+
+.search-box{
+    width: 360px;
+    height: 42px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #F2F2F2;
+    border-radius: 21px;
+    border: 2px solid white;
+    padding: 0;
+    font-family: 'IBM Plex Sans', FontAwesome;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #5C5C5C;
+}
+
+.create-account{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    /* font-size: 16px; */
+    /* line-height: 21px; */
+    /* text-align: right; */
+    color: #2E2E2E;
+}
