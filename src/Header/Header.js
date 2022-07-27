@@ -7,7 +7,7 @@ import Dropdown from "react-bootstrap/Dropdown";
 import LoginModal from "../Modal/LoginModal";
 import CreateAcModal from "../Modal/CreateAcModal";
 
-const Header = () => {
+const Header = ({ user, logout, addUser }) => {
    const [show1, setShow1] = useState(false);
    const [show2, setShow2] = useState(false);
 
@@ -139,18 +139,39 @@ const Header = () => {
                         type="search"
                         name="search"
                         className="search-box ps-3"
-                        placeholder="&#xF002;  Search for your favourite groups in ATG"
+                        placeholder="&#xF002;    Search for your favourite groups in ATG"
                      />
                   </Nav>
                   <div>
                      <Dropdown>
-                        <Dropdown.Toggle
-                           className="bg-white border-0 text-black fw-semibold create-account"
-                           id="dropdown-basic"
-                        >
-                           Create Account.{" "}
-                           <span style={{ color: "#495DC6" }}>It's free!</span>
-                        </Dropdown.Toggle>
+                        {user ? (
+                           <>
+                              <Dropdown.Toggle
+                                 className="bg-white d-flex align-items-center border-0 text-black fw-semibold create-account"
+                                 id="dropdown-basic"
+                              >
+                                 <img
+                                    style={{ height: "36px", width: "36px" }}
+                                    src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                                    class="rounded-circle"
+                                    alt="Avatar"
+                                 />
+                                 <p className="avatar-text">Sarthak Kamra</p>
+                              </Dropdown.Toggle>
+                           </>
+                        ) : (
+                           <>
+                              <Dropdown.Toggle
+                                 className="bg-white border-0 text-black fw-semibold create-account"
+                                 id="dropdown-basic"
+                              >
+                                 Create Account.{" "}
+                                 <span style={{ color: "#495DC6" }}>
+                                    It's free!
+                                 </span>
+                              </Dropdown.Toggle>
+                           </>
+                        )}
 
                         <Dropdown.Menu>
                            <Dropdown.Item onClick={handleShow1}>
@@ -158,6 +179,12 @@ const Header = () => {
                            </Dropdown.Item>
                            <Dropdown.Item onClick={handleShow2}>
                               Login
+                           </Dropdown.Item>
+                           <Dropdown.Item onClick={addUser}>
+                              Siddharth Goyal
+                           </Dropdown.Item>
+                           <Dropdown.Item onClick={logout}>
+                              Log out
                            </Dropdown.Item>
                         </Dropdown.Menu>
                      </Dropdown>
