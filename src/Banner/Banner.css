@@ -13,3 +13,35 @@
     font-family: 'IBM Plex Sans';
     font-style: normal;
 }
+
+
+
+@media only screen and (max-width: 576px) {
+    .banner-text {
+        padding-top: 286px;
+        padding-left: 20px;
+    }
+    .join-btn{
+        position: absolute;
+        top: 80px;
+        right: 20px;
+    }
+    .arrow{
+        position: absolute;
+        top: 80px;
+        left: 20px;
+    }
+    .pen{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 50;
+    }
+}
+
+@media only screen and (max-width: 1310px) {
+    .banner-text {
+        padding-top: 286px;
+        padding-left: 20px;
+    }
+}

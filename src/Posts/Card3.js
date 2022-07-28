@@ -22,8 +22,8 @@ const Card3 = () => {
    return (
       <div>
          <div
-            style={{ width: "692px", marginTop: "16px" }}
-            className="post-margin all-font"
+            style={{ marginTop: "16px" }}
+            className="post-margin card-size all-font"
          >
             <Card>
                <Card.Img
@@ -46,6 +46,7 @@ const Card3 = () => {
                            id="dropdown-basic"
                         >
                            <svg
+                              style={{ marginLeft: "20px" }}
                               width="20"
                               height="6"
                               viewBox="0 0 20 6"
@@ -86,7 +87,7 @@ const Card3 = () => {
                         </svg>
                         <p className="date-text">Fri, 12 Oct, 2018</p>
                      </div>
-                     <div className="d-flex">
+                     <div style={{ marginLeft: "70px" }} className="d-flex">
                         <MdOutlineLocationOn height={17} width={12} />
                         <p className="date-text">Ahmedabad,India</p>
                      </div>
@@ -114,6 +115,7 @@ const Card3 = () => {
                      <div>
                         <div className="d-flex align-items-center">
                            <svg
+                              className="d-none d-sm-block"
                               width="95"
                               height="18"
                               viewBox="0 0 95 18"
@@ -134,6 +136,7 @@ const Card3 = () => {
 
                            <div className="share">
                               <svg
+                                 className="me-2"
                                  width="14"
                                  height="16"
                                  viewBox="0 0 14 16"
@@ -145,6 +148,7 @@ const Card3 = () => {
                                     fill="#2D2D2D"
                                  />
                               </svg>
+                              Share
                            </div>
                         </div>
                      </div>

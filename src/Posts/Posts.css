@@ -2,7 +2,7 @@
 .post-margin{
     /* margin-top: 47px; */
     margin-left: 200px;
-    margin-right: 200px;
+    /* margin-right: 200px; */
 }
 .route-text{
     font-family: 'IBM Plex Sans';
@@ -61,7 +61,7 @@
     line-height: 20px;
     color: #000000;
     margin-left: 7px;
-    margin-right: 70px;
+    /* margin-right: 70px; */
 }
 .dropdown::after{
     display: none;
@@ -109,7 +109,82 @@
     padding-top: 4px;
     padding-bottom: 4px;
 }
-
 .password{
     font-family:'IBM Plex Sans', FontAwesome;
 }
+.location-margin{
+    margin-right: 200px;
+}
+.card-size{
+    width: 692px;
+}
+.close-button{
+    margin-top: -40px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 576px) {
+    .post-margin {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .card-size {
+        width: 100%;
+    }
+        .close-button {
+            margin-top: 10px;
+            margin-right: 20px;
+        }
+}
+@media only screen and (max-width: 992px) {
+    .post-margin {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .card-size {
+        width: 100%;
+    }
+        .location-margin {
+            margin-right: 30px;
+        }
+}
+@media only screen and (min-width: 993px) and (max-width: 1325px) {
+    .post-margin {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    /* .card-size {
+        width: 100%;
+    } */
+    .location-margin {
+        margin-right: 10px;
+    }
+}
+
+
+
+
+

@@ -21,7 +21,7 @@ const CreateAcModal = ({ show, handleClose }) => {
             >
                <CloseButton
                   style={{ marginTop: "-40px", marginBottom: "10px" }}
-                  className="ms-auto rounded-circle p-2 bg-white"
+                  className="ms-auto rounded-circle p-2 d-none d-sm-block bg-white"
                   onClick={handleClose}
                />
                <div>
@@ -34,7 +34,7 @@ const CreateAcModal = ({ show, handleClose }) => {
                         paddingBottom: "17px",
                         marginBottom: "8px",
                      }}
-                     className="text-center"
+                     className="text-center d-none d-sm-block"
                   >
                      Let's learn, share & inspire each other with our passion
                      for computer engineering. Sign up now 🤘🏼
@@ -53,15 +53,33 @@ const CreateAcModal = ({ show, handleClose }) => {
                         style={{ marginBottom: "24px" }}
                         className="d-flex justify-content-between align-items-center"
                      >
-                        <Modal.Title
-                           className="fw-bold"
-                           id="contained-modal-title-vcenter"
-                        >
-                           Create Account
-                        </Modal.Title>
+                        <div className="d-flex w-100 justify-content-between align-items-center">
+                           <Modal.Title
+                              className="fw-bold"
+                              id="contained-modal-title-vcenter"
+                           >
+                              Create Account
+                           </Modal.Title>
+                           <CloseButton
+                              style={{ position: "relative" }}
+                              className="ms-auto rounded-circle d-sm-none d-block p-2 bg-dark close-button"
+                              onClick={handleClose}
+                           >
+                              <button
+                                 style={{
+                                    position: "absolute",
+                                    top: 5,
+                                    left: 4,
+                                 }}
+                                 type="button"
+                                 class="btn-close btn-close-white"
+                                 aria-label="Close"
+                              ></button>
+                           </CloseButton>
+                        </div>
                         <div>
                            <p
-                              className="ms-auto"
+                              className="ms-auto d-none d-sm-block"
                               style={{ fontWeight: 600, marginBottom: 0 }}
                            >
                               Already have an account?{" "}
@@ -126,19 +144,26 @@ const CreateAcModal = ({ show, handleClose }) => {
                               class="form-control"
                               placeholder="Confirm Password"
                            />
-                           <button
-                              style={{
-                                 marginTop: "20px",
-                                 height: "48px",
-                                 width: "100%",
-                                 border: 0,
-                                 backgroundColor: "#2F6CE5",
-                                 color: "white",
-                                 borderRadius: "20px",
-                              }}
-                           >
-                              Create Account
-                           </button>
+                           <div className="d-flex mt-4 justify-content-between align-items-center">
+                              <button
+                                 style={{
+                                    height: "48px",
+                                    width: "100%",
+                                    border: 0,
+                                    backgroundColor: "#2F6CE5",
+                                    color: "white",
+                                    borderRadius: "20px",
+                                    width: "50%",
+                                 }}
+                              >
+                                 Create Account
+                              </button>
+                              <div>
+                                 <a className="text-dark" href="#">
+                                    Or Sign In
+                                 </a>
+                              </div>
+                           </div>
                            <button
                               style={{
                                  marginTop: "20px",
@@ -175,8 +200,20 @@ const CreateAcModal = ({ show, handleClose }) => {
                               />
                               Sign up with Google
                            </button>
+                           <p
+                              className="d-block d-sm-none"
+                              style={{
+                                 fontSize: "11px",
+                                 textAlign: "center",
+                                 marginBottom: 0,
+                                 marginTop: "30px",
+                              }}
+                           >
+                              By signing up, you agree to our Terms &
+                              conditions, Privacy policy
+                           </p>
                         </div>
-                        <div className="w-1/2">
+                        <div className="w-1/2 d-none d-sm-block">
                            <img className="w-100" src={pic} alt="" />
                            <p
                               style={{

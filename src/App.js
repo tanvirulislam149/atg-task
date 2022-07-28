@@ -16,7 +16,7 @@ function App() {
    return (
       <div>
          <Header user={user} logout={logOut} addUser={addUser}></Header>
-         <Banner></Banner>
+         <Banner user={user}></Banner>
          <Posts user={user}></Posts>
       </div>
    );

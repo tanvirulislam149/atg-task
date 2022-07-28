@@ -30,8 +30,40 @@
 .create-account{
     font-family: 'IBM Plex Sans';
     font-style: normal;
-    /* font-size: 16px; */
-    /* line-height: 21px; */
-    /* text-align: right; */
+    font-size: 16px;
+    line-height: 21px;
+    text-align: right;
     color: #2E2E2E;
+}
+
+.logo{
+    width: 163px;
+}
+
+@media only screen and (max-width: 800px){
+    .side-margin {
+            margin-left: 0px;
+            margin-right: 0px;
+            padding: 0;
+        }
+}
+
+
+@media only screen and (max-width: 576px) {
+    .side-margin {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 0;
+    }
+    .logo{
+        width: 130px;
+    }
+        /* .create-account {
+            font-family: 'IBM Plex Sans';
+            font-style: normal;
+            font-size: 16px;
+            line-height: 21px;
+            text-align: right;
+            color: #2E2E2E;
+        } */
 }

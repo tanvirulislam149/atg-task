@@ -17,14 +17,14 @@ const Header = ({ user, logout, addUser }) => {
    return (
       <div>
          <Navbar className="side-margin" expand="lg">
-            <Container fluid>
+            <Container className="px-1" fluid>
                <Navbar.Collapse
                   id="navbarScroll"
-                  className="d-flex justify-content-between d-none d-sm-block"
+                  className="d-flex justify-content-between"
                >
-                  <Navbar.Brand href="#">
+                  <Navbar.Brand className="m-0" href="#">
                      <svg
-                        width="163"
+                        className="logo m-0"
                         height="24"
                         viewBox="0 0 163 24"
                         fill="none"
@@ -138,7 +138,7 @@ const Header = ({ user, logout, addUser }) => {
                      <input
                         type="search"
                         name="search"
-                        className="search-box ps-3"
+                        className="search-box ps-3 d-none d-md-block"
                         placeholder="&#xF002;    Search for your favourite groups in ATG"
                      />
                   </Nav>
@@ -156,13 +156,13 @@ const Header = ({ user, logout, addUser }) => {
                                     class="rounded-circle"
                                     alt="Avatar"
                                  />
-                                 <p className="avatar-text">Sarthak Kamra</p>
+                                 <p className="avatar-text">Siddharth Goyal</p>
                               </Dropdown.Toggle>
                            </>
                         ) : (
                            <>
                               <Dropdown.Toggle
-                                 className="bg-white border-0 text-black fw-semibold create-account"
+                                 className="bg-white px-1 border-0 text-black fw-semibold create-account"
                                  id="dropdown-basic"
                               >
                                  Create Account.{" "}

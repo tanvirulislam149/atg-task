@@ -22,8 +22,8 @@ const Card4 = () => {
    return (
       <div>
          <div
-            style={{ width: "692px", marginTop: "16px", marginBottom: "98px" }}
-            className="post-margin all-font"
+            style={{ marginTop: "16px", marginBottom: "98px" }}
+            className="post-margin card-size all-font"
          >
             <Card>
                <Card.Body>
@@ -41,6 +41,7 @@ const Card4 = () => {
                            id="dropdown-basic"
                         >
                            <svg
+                              style={{ marginLeft: "20px" }}
                               width="20"
                               height="6"
                               viewBox="0 0 20 6"
@@ -83,7 +84,7 @@ const Card4 = () => {
                            Innovaccer Analytics Private Ltd.
                         </p>
                      </div>
-                     <div className="d-flex">
+                     <div style={{ marginLeft: "70px" }} className="d-flex">
                         <MdOutlineLocationOn height={17} width={12} />
                         <p className="date-text">Noida, India</p>
                      </div>
@@ -112,6 +113,7 @@ const Card4 = () => {
                      <div>
                         <div className="d-flex align-items-center">
                            <svg
+                              className="d-none d-sm-block"
                               width="95"
                               height="18"
                               viewBox="0 0 95 18"
@@ -132,6 +134,7 @@ const Card4 = () => {
 
                            <div className="share">
                               <svg
+                                 className="me-2"
                                  width="14"
                                  height="16"
                                  viewBox="0 0 14 16"
@@ -143,6 +146,7 @@ const Card4 = () => {
                                     fill="#2D2D2D"
                                  />
                               </svg>
+                              Share
                            </div>
                         </div>
                      </div>

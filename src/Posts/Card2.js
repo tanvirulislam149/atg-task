@@ -5,8 +5,8 @@ const Card2 = () => {
    return (
       <div>
          <div
-            style={{ width: "692px", marginTop: "16px" }}
-            className="post-margin all-font"
+            style={{ marginTop: "16px" }}
+            className="post-margin card-size all-font"
          >
             <Card>
                <Card.Img
@@ -25,6 +25,7 @@ const Card2 = () => {
                      </div>
                      <div>
                         <svg
+                           style={{ marginLeft: "20px" }}
                            width="20"
                            height="6"
                            viewBox="0 0 20 6"
@@ -55,6 +56,7 @@ const Card2 = () => {
                      <div>
                         <div className="d-flex align-items-center">
                            <svg
+                              className="d-none d-sm-block"
                               width="95"
                               height="18"
                               viewBox="0 0 95 18"
@@ -74,6 +76,7 @@ const Card2 = () => {
                            </svg>
                            <div className="share">
                               <svg
+                                 className="me-2"
                                  width="14"
                                  height="16"
                                  viewBox="0 0 14 16"
@@ -85,6 +88,7 @@ const Card2 = () => {
                                     fill="#2D2D2D"
                                  />
                               </svg>
+                              Share
                            </div>
                         </div>
                      </div>

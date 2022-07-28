@@ -12,25 +12,25 @@ const PostHeader = ({ user }) => {
                      All posts(32)
                   </p>
                   <p
-                     className="mb-0"
+                     className="mb-0 d-none d-sm-block"
                      style={{ color: "#8A8A8A", marginLeft: "20px" }}
                   >
                      Article
                   </p>
                   <p
-                     className="mb-0"
+                     className="mb-0 d-none d-sm-block"
                      style={{ color: "#8A8A8A", marginLeft: "20px" }}
                   >
                      Event
                   </p>
                   <p
-                     className="mb-0"
+                     className="mb-0 d-none d-sm-block"
                      style={{ color: "#8A8A8A", marginLeft: "20px" }}
                   >
                      Education
                   </p>
                   <p
-                     className="mb-0"
+                     className="mb-0 d-none d-sm-block"
                      style={{
                         color: "#8A8A8A",
                         marginLeft: "20px",
@@ -43,20 +43,32 @@ const PostHeader = ({ user }) => {
                   <div>
                      <Dropdown>
                         <Dropdown.Toggle
-                           className="border-0 text-black fw-semibold write-post"
+                           className="border-0 text-black fw-semibold write-post d-none d-sm-block"
                            id="dropdown-basic"
                            style={{
                               backgroundColor: "#EDEEF0",
                               marginRight: "16px",
+                              position: "static",
                            }}
                         >
                            Write a post
+                        </Dropdown.Toggle>
+                        <Dropdown.Toggle
+                           className="border-0 text-black fw-semibold write-post d-sm-none d-block"
+                           id="dropdown-basic"
+                           style={{
+                              backgroundColor: "#EDEEF0",
+                              marginRight: "16px",
+                              position: "static",
+                           }}
+                        >
+                           Filter: All
                         </Dropdown.Toggle>
                      </Dropdown>
                   </div>
                   {user ? (
                      <>
-                        <button disabled className="btn text-dark bg-white">
+                        <button className="btn border border-1 border-dark text-dark d-none d-sm-block">
                            <svg
                               style={{ marginRight: "6px" }}
                               width="18"
@@ -77,7 +89,7 @@ const PostHeader = ({ user }) => {
                      <>
                         <button
                            style={{ backgroundColor: "#2F6CE5" }}
-                           className="btn text-white"
+                           className="btn btn-primary d-none d-sm-block text-white"
                         >
                            <svg
                               style={{ marginRight: "6px" }}

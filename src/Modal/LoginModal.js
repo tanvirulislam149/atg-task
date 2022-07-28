@@ -21,7 +21,7 @@ const LoginModal = ({ show, handleClose }) => {
             >
                <CloseButton
                   style={{ marginTop: "-40px", marginBottom: "10px" }}
-                  className="ms-auto rounded-circle p-2 bg-white"
+                  className="ms-auto rounded-circle p-2 d-none d-sm-block bg-white"
                   onClick={handleClose}
                />
                <div>
@@ -34,7 +34,7 @@ const LoginModal = ({ show, handleClose }) => {
                         paddingBottom: "17px",
                         marginBottom: "8px",
                      }}
-                     className="text-center fw-semibold all-font"
+                     className="text-center fw-semibold all-font d-none d-sm-block"
                   >
                      Let's learn, share & inspire each other with our passion
                      for computer engineering. Sign up now 🤘🏼
@@ -53,15 +53,33 @@ const LoginModal = ({ show, handleClose }) => {
                         style={{ marginBottom: "24px" }}
                         className="d-flex justify-content-between align-items-center"
                      >
-                        <Modal.Title
-                           className="fw-bold all-font"
-                           id="contained-modal-title-vcenter"
-                        >
-                           Sign In
-                        </Modal.Title>
+                        <div className="d-flex w-100 justify-content-between align-items-center">
+                           <Modal.Title
+                              className="fw-bold"
+                              id="contained-modal-title-vcenter"
+                           >
+                              Sign In
+                           </Modal.Title>
+                           <CloseButton
+                              style={{ position: "relative" }}
+                              className="ms-auto rounded-circle d-sm-none d-block p-2 bg-dark close-button"
+                              onClick={handleClose}
+                           >
+                              <button
+                                 style={{
+                                    position: "absolute",
+                                    top: 5,
+                                    left: 4,
+                                 }}
+                                 type="button"
+                                 class="btn-close btn-close-white"
+                                 aria-label="Close"
+                              ></button>
+                           </CloseButton>
+                        </div>
                         <div>
                            <p
-                              className="ms-auto all-font"
+                              className="ms-auto all-font d-none d-sm-block"
                               style={{ fontWeight: 600, marginBottom: 0 }}
                            >
                               Don’t have an account yet?
@@ -94,20 +112,26 @@ const LoginModal = ({ show, handleClose }) => {
                               class="form-control password all-font"
                               placeholder="Password                                                                           &#xF06E;"
                            />
-                           <button
-                              style={{
-                                 marginTop: "20px",
-                                 height: "48px",
-                                 width: "100%",
-                                 border: 0,
-                                 backgroundColor: "#2F6CE5",
-                                 color: "white",
-                                 borderRadius: "20px",
-                                 fontWeight: 600,
-                              }}
-                           >
-                              Sign In
-                           </button>
+                           <div className="d-flex mt-4 justify-content-between align-items-center">
+                              <button
+                                 style={{
+                                    height: "48px",
+                                    width: "100%",
+                                    border: 0,
+                                    backgroundColor: "#2F6CE5",
+                                    color: "white",
+                                    borderRadius: "20px",
+                                    width: "50%",
+                                 }}
+                              >
+                                 Sign In
+                              </button>
+                              <div>
+                                 <a className="text-dark" href="#">
+                                    Or Create Account
+                                 </a>
+                              </div>
+                           </div>
                            <button
                               style={{
                                  marginTop: "20px",
@@ -159,7 +183,7 @@ const LoginModal = ({ show, handleClose }) => {
                               Forgot Password
                            </button>
                         </div>
-                        <div className="w-1/2">
+                        <div className="w-1/2 d-none d-sm-block">
                            <img className="w-100" src={pic} alt="" />
                         </div>
                      </div>

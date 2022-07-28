@@ -12,14 +12,17 @@ const Posts = ({ user }) => {
    return (
       <div>
          <PostHeader user={user}></PostHeader>
-         <div className="d-flex">
+         <div className="d-sm-flex justify-content-between">
             <div>
                <Card1></Card1>
                <Card2></Card2>
                <Card3></Card3>
                <Card4></Card4>
             </div>
-            <div style={{ marginRight: "200px" }}>
+            <div
+               className="d-none d-lg-block location-margin"
+               style={{ width: "240px" }}
+            >
                <div>
                   <MdOutlineLocationOn height={17} width={12} />
                   <input
