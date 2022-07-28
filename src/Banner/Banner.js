@@ -10,10 +10,7 @@ const Banner = ({ user }) => {
          </div>
          {user ? (
             <>
-               <button
-                  // disabled
-                  className="btn border border-1 border-white text-white d-sm-none d-block join-btn"
-               >
+               <button className="btn border border-1 border-white text-white d-sm-none d-block join-btn">
                   <svg
                      style={{ marginRight: "6px" }}
                      width="18"

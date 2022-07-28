@@ -22,7 +22,7 @@ const Header = ({ user, logout, addUser }) => {
                   id="navbarScroll"
                   className="d-flex justify-content-between"
                >
-                  <Navbar.Brand className="m-0" href="#">
+                  <Navbar.Brand className="m-0 p-0" href="#">
                      <svg
                         className="logo m-0"
                         height="24"
@@ -180,9 +180,7 @@ const Header = ({ user, logout, addUser }) => {
                            <Dropdown.Item onClick={handleShow2}>
                               Login
                            </Dropdown.Item>
-                           <Dropdown.Item onClick={addUser}>
-                              Siddharth Goyal
-                           </Dropdown.Item>
+                           <Dropdown.Item onClick={addUser}>User</Dropdown.Item>
                            <Dropdown.Item onClick={logout}>
                               Log out
                            </Dropdown.Item>

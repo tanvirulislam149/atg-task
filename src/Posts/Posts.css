@@ -131,21 +131,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media only screen and (max-width: 576px) {
     .post-margin {
         margin-left: 0px;
@@ -176,9 +161,6 @@
         margin-left: 10px;
         margin-right: 10px;
     }
-    /* .card-size {
-        width: 100%;
-    } */
     .location-margin {
         margin-right: 10px;
     }
